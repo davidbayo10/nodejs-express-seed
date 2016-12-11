@@ -4,9 +4,10 @@ nodejs-express-seed
 Getting started
 ---
 ```bash
-mkdir your-project-folder
-cd your-project-folder
-wget  -O nodejs-express-seed.zip
+wget https://github.com/davidbayo10/nodejs-express-seed/archive/master.zip -O {{ your project name }}.zip
+unzip {{ your project name }}.zip
+cd {{ your project name }}
+npm i
 ```
 
 LICENSE
