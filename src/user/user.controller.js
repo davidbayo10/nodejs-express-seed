@@ -1,6 +1,5 @@
 'use strict';
 const userBll = require('./user.bll');
-const co = require('co');
 
 exports.get = function* (req, res) {
   const users = yield userBll.get();
