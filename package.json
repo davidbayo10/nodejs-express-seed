@@ -1,6 +1,6 @@
 {
-  "name": "app-name",
-  "version": "0.0.0",
+  "name": "nodejs-express-seed",
+  "version": "1.1.0",
   "description": "",
   "main": "app.js",
   "scripts": {
