@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (app) {
+module.exports = function (app, rootDir) {
   require('./express')(app);
-  require('./routes')(app);
+  require('./mongoose-model-loader')(rootDir);
 };

@@ -1,12 +1,15 @@
 'use strict';
 const appName = require('../package').name;
 
-module.exports = () => {
-  switch (process.env.NODE_ENV) {
+module.exports = (environment) => {
+  switch (environment) {
     case 'production':
       return `localhost/${appName}`;
       break;
-    default:
+    case 'test':
       return `localhost/${appName}-test`;
+      break;
+    default:
+      return `localhost/${appName}-development`;
   }
 };
