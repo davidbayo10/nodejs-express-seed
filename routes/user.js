@@ -1,4 +1,5 @@
 'use strict';
+
 const userController = require('../src/user/user.controller');
 function userRouter(app) {
   const router = require('co-express-router')();
