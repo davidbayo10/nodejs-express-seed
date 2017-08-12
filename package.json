@@ -14,23 +14,23 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "bluebird": "3.4.7",
-    "body-parser": "1.15.2",
+    "bluebird": "3.5.0",
+    "body-parser": "1.17.2",
     "co": "4.6.0",
     "co-express-router": "davidbayo10/co-express-router",
-    "compression": "1.6.2",
+    "compression": "1.7.0",
     "cookie-parser": "1.4.3",
     "cookie-session": "2.0.0-alpha.2",
-    "cors": "2.8.1",
-    "express": "4.14.0",
-    "helmet": "3.3.0",
-    "log4js": "1.1.0",
-    "mongoose": "4.7.6",
+    "cors": "2.8.4",
+    "express": "4.15.4",
+    "helmet": "3.8.1",
+    "log4js": "2.3.3",
+    "mongoose": "4.11.6",
     "mongoose-model-loader": "davidbayo10/mongoose-model-loader",
     "morgan-logger": "davidbayo10/morgan-logger",
-    "passport": "0.3.2"
+    "passport": "0.4.0"
   },
   "devDependencies": {
-    "pm2": "2.2.3"
+    "pm2": "2.6.1"
   }
 }
