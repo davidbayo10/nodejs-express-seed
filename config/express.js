@@ -8,6 +8,9 @@ const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const cookieSession = require('cookie-session');
 
+const graphqlSechema = require('../graphql');
+const graphqlHTTP = require('express-graphql');
+
 const pkg = require('../package');
 const appName = pkg.name;
 
@@ -27,4 +30,10 @@ module.exports = function (app) {
     secret: `${appName}-${pkg.version}-secret`,
     maxAge: 24 * 60 * 60 * 1000,
   }));
+
+  app.use('/graphql', graphqlHTTP((req) => ({
+    schema: graphqlSechema,
+    graphiql: true,
+    pretty: true
+  })));
 };

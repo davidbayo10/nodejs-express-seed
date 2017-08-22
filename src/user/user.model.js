@@ -2,7 +2,7 @@
 const user = {
   personalInfo: {
     name: String,
-    surename: String,
+    surname: String,
   },
   contactInfo: {
     email: {
